@@ -42,7 +42,7 @@ conn.login('marimuthu.s@cardinality.ai.prvpod', 'Thisaimugam5ya2qy1F3Gzp2KJp3JgH
 
 });
 
-restService.listen(port, function () {
+restService.listen(process.env.PORT || 5000, function () {
   console.log("Server up and listening on port ",port );
 });
 
