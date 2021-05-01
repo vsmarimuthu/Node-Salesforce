@@ -56,7 +56,7 @@ conn.apex.post("/showreport/", body, function(res,respo) {
 
 });
 
-restService.listen(port, function () {
+restService.listen(process.env.PORT || 5000, function () {
   console.log("Server up and listening on port ",port );
 });
 
