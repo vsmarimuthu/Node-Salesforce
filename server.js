@@ -32,7 +32,7 @@ conn.login('marimuthu.s@cardinality.ai.prvqa2', 'Thisaimugam5#', function(err, r
   console.log(conn.instanceUrl);
   
 });
-speech = JSON.stringify('mARIMUTHU');
+speech = JSON.stringify(conn.accessToken);
 var speechResponse = {
   google: {
     expectUserResponse: true,
