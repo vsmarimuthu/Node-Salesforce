@@ -27,7 +27,7 @@ var conn = new jsforce.Connection({
   loginUrl : 'https://test.salesforce.com'
 });
 conn.login('marimuthu.s@cardinality.ai.prvqa2', 'Thisaimugam5#', function(err, res) {
-  if (err) { return console.error(err); }
+  if (err) { return console.log(err); }
   console.log(conn.accessToken);
   console.log(conn.instanceUrl);
   
