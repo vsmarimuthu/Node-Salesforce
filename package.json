@@ -7,9 +7,10 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"dependencies": {
-		"jsforce": "^2.0.0-beta.3",
 		"body-parser": "*",
-		"express": "*"
+		"express": "*",
+		"jsforce": "^2.0.0-beta.3",
+		"node-salesforce": "^0.8.0"
 	},
 	"author": "",
 	"license": "ISC"
