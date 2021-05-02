@@ -3,7 +3,7 @@
 	"clientId": "3MVG9N6eDmZRVJOlOiQKbAJuqgE348vvvD0qPKb2Uct9OkEfOCq8HIEUFB7vWGnELmmxqJqKa8cTZITu7El8I",
 	"clientSecret": "1B2C540127B7E1F64F19CBF2C443B73549DDF12498B29785D9D417947F8922F3",
 	"redirectUri": "https://test.salesforce.com",
-	"salesforceUserName": "marimuthu.s@cardinality.ai.prvpod",
-	"salesforcePassword": "Thisaimugam5",
-	"salesforceSecurityToken": "ya2qy1F3Gzp2KJp3JgHNtoQy"
+	"salesforceUserName": "drvenkat-mlsn@force.com.travelqa",
+	"salesforcePassword": "travel@123",
+	"salesforceSecurityToken": "bapbML0Wcdl5PtEEIzpZHyFq"
 }
