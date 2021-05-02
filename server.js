@@ -24,8 +24,9 @@ var conn = new jsforce.Connection({
 console.log('req :>> ', JSON.stringify(req.body.queryResult.parameters));
 conn.login(config.salesforceUserName, config.salesforcePassword+config.salesforceSecurityToken, function(err, userInfo) {
 	console.log(conn.accessToken);
+ 
   let _filter={column: req.body.queryResult.parameters.filterField,
-    value: req.body.queryResult.parameters.filterValue,
+    value: req.body.queryResult.parameters.filterValue.toUTCString(),
     operator: req.body.queryResult.parameters.filteroperator};
   var body = { Name: req.body.queryResult.parameters.reportName,
               Filter : _filter
