@@ -25,9 +25,9 @@ console.log('req :>> ', JSON.stringify(req.body.queryResult.parameters));
 conn.login(config.salesforceUserName, config.salesforcePassword+config.salesforceSecurityToken, function(err, userInfo) {
 	console.log(conn.accessToken);
   var body = { Name: req.body.queryResult.parameters.reportName,
-              filterField: req.body.queryResult.parameters.filterField,
-              filterValue: req.body.queryResult.parameters.filterValue,
-              filteroperator: req.body.queryResult.parameters.filteroperator};
+              column: req.body.queryResult.parameters.filterField,
+              value: req.body.queryResult.parameters.filterValue,
+              operator: req.body.queryResult.parameters.filteroperator};
 conn.apex.post("/showreport/", body, function(res,respo) {
   console.log(respo);
   speech = '<speak><break strength="x-strong"/> Congratulations. <break time=".5s"/>'+respo+' <say-as interpret-as="cardinal">' + speech + '</say-as></speak>';
