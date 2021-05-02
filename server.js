@@ -28,10 +28,12 @@ conn.login(config.salesforceUserName, config.salesforcePassword+config.salesforc
   let _filter={column: req.body.queryResult.parameters.filterField,
     value: req.body.queryResult.parameters.filterValue.toUTCString(),
     operator: req.body.queryResult.parameters.filteroperator};
+    console.log('_filter :>> ', JSON.stringify(_filter));
   var body = { Name: req.body.queryResult.parameters.reportName,
               Filter : _filter
               };
-conn.apex.post("/showreport/", body, function(res,respo) {
+              console.log('_filter :>> ', JSON.stringify(_filter));
+conn.apex.post("/showreport/",JSON.stringify(body), function(res,respo) {
   console.log(respo);
   speech = '<speak><break strength="x-strong"/> Congratulations. <break time=".5s"/>'+respo+' <say-as interpret-as="cardinal">' + speech + '</say-as></speak>';
        var speechResponse = {
