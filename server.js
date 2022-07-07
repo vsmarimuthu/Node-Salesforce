@@ -33,29 +33,12 @@ conn.login(config.salesforceUserName, config.salesforcePassword+config.salesforc
               Filter : _filter
               };
               console.log('_filter :>> ', JSON.stringify(_filter));
-conn.apex.post("/showreport/",JSON.stringify(body), function(res,respo) {
+conn.apex.post("/createteslaquote/",JSON.stringify(body), function(res,respo) {
   console.log(respo);
-  speech = '<speak><break strength="x-strong"/> Congratulations. <break time=".5s"/>'+respo+' <say-as interpret-as="cardinal">' + speech + '</say-as></speak>';
-       var speechResponse = {
-        google: {
-         expectUserResponse: true,
-           richResponse: {
-           items: [{
-            simpleResponse: {
-                          textToSpeech: speech
-                                          }
-                                  }]
-                              }
-                            }
-                          };
+ 
 
       return mainres.json({
-        payload: speechResponse,
-        //data: speechResponse,
-        fulfillmentText: speech,
-        speech: speech,
-        displayText: speech,
-        source: "Reports"
+        payload: 'Success'
     });
   // the response object structure depends on the definition of apex class
 });
