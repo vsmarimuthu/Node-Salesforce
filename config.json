@@ -1,9 +1,9 @@
 {
 	"salesforceLoginURL": "https://test.salesforce.com",
-	"clientId": "3MVG9N6eDmZRVJOlOiQKbAJuqgE348vvvD0qPKb2Uct9OkEfOCq8HIEUFB7vWGnELmmxqJqKa8cTZITu7El8I",
-	"clientSecret": "1B2C540127B7E1F64F19CBF2C443B73549DDF12498B29785D9D417947F8922F3",
+	"clientId": "3MVG9_I_oWkIqLrnRk4_uofC_sNFYDGXyeF4g3pE7sE1bH_P0xLyiyqQfEMvoKOyd2IZmve5Yb82DQe1KKDJd",
+	"clientSecret": "FFFC6DB41B69A60B64A4F27DE79718B51059EF1D56E5CC38F46A2D9AB822A341",
 	"redirectUri": "https://test.salesforce.com",
-	"salesforceUserName": "drvenkat-mlsn@force.com.travelqa",
-	"salesforcePassword": "travel@123",
-	"salesforceSecurityToken": "bapbML0Wcdl5PtEEIzpZHyFq"
+	"salesforceUserName": "solutions@eclouds.co.eclmodules.ecldemo",
+	"salesforcePassword": "Stony@2030",
+	"salesforceSecurityToken": "htt1ie8L5NZh0Wb8e37jGpMmy"
 }
