@@ -25,7 +25,7 @@ var conn = new jsforce.Connection({
 conn.login(config.salesforceUserName, config.salesforcePassword+config.salesforceSecurityToken, function(err, userInfo) {
 	console.log(conn.accessToken);
 
-conn.apex.post("/createteslaquote/",req, function(res,respo) {
+conn.apex.post("/createteslaquote/",JSON.stringify(req), function(res,respo) {
   console.log(respo);
  
 
