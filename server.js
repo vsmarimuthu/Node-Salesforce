@@ -14,7 +14,7 @@ restService.use(
 restService.use(bodyParser.json());
 
 
-restService.post("/getReports", function (req, mainres) {	
+restService.post("/createQuote", function (req, mainres) {	
   var speech ='';;
   var access_token = '';
     try{
@@ -25,7 +25,7 @@ var conn = new jsforce.Connection({
 conn.login(config.salesforceUserName, config.salesforcePassword+config.salesforceSecurityToken, function(err, userInfo) {
 	console.log(conn.accessToken);
 
-conn.apex.post("/createteslaquote/", function(res,respo) {
+conn.apex.post("/createteslaquote/",req, function(res,respo) {
   console.log(respo);
  
 
