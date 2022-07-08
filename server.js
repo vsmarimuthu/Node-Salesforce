@@ -25,7 +25,7 @@ console.log('req :>> ', req.body);
 conn.login(config.salesforceUserName, config.salesforcePassword+config.salesforceSecurityToken, function(err, userInfo) {
 	console.log(conn.accessToken);
 
-conn.apex.post("/createteslaquote/",JSON.stringify(req.body), function(res,respo) {
+conn.apex.post("/createteslaquote/",req.body, function(res,respo) {
   console.log(respo);
  
 
