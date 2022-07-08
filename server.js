@@ -21,7 +21,7 @@ restService.post("/createQuote", function (req, mainres) {
 var conn = new jsforce.Connection({
   loginUrl : config.salesforceLoginURL
 });
-console.log('req :>> ', req);
+console.log('req :>> ', req.body);
 conn.login(config.salesforceUserName, config.salesforcePassword+config.salesforceSecurityToken, function(err, userInfo) {
 	console.log(conn.accessToken);
 
