@@ -3,7 +3,7 @@
 	"clientId": "3MVG9_I_oWkIqLrnRk4_uofC_sNFYDGXyeF4g3pE7sE1bH_P0xLyiyqQfEMvoKOyd2IZmve5Yb82DQe1KKDJd",
 	"clientSecret": "FFFC6DB41B69A60B64A4F27DE79718B51059EF1D56E5CC38F46A2D9AB822A341",
 	"redirectUri": "https://test.salesforce.com",
-	"salesforceUserName": "solutions@eclouds.co.eclmodules.ecldemo",
-	"salesforcePassword": "Stony@2030",
+	"salesforceUserName": "mari@eclouds.co.eclmodules.ecldemo",
+	"salesforcePassword": "Stony$2025",
 	"salesforceSecurityToken": "htt1ie8L5NZh0Wb8e37jGpMmy"
 }
