@@ -17,6 +17,7 @@ restService.use(bodyParser.json());
 restService.post("/createQuote", function (req, mainres) {	
   var speech ='';;
   var access_token = '';
+	console.log('req :>> ', req.body);
     try{
 var conn = new jsforce.Connection({
   loginUrl : config.salesforceLoginURL
